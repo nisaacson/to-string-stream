@@ -1,0 +1,33 @@
+{
+  "name": "stringify-stream",
+  "version": "0.0.1",
+  "description": "stringify binary data transform stream",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Noah Issaacson <noah+npmjs@nisaacson.com> (https://github.com/nisaacson)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.16.2",
+    "sinon": "~1.7.3",
+    "lodash-node": "~2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nisaacson/stringify-stream.git"
+  },
+  "keywords": [
+    "stream",
+    "json",
+    "parse"
+  ],
+  "bugs": {
+    "url": "https://github.com/nisaacson/stringify-stream/issues"
+  },
+  "homepage": "https://github.com/nisaacson/stringify-stream"
+}
