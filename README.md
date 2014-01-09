@@ -1,33 +1,33 @@
-# StringifyStream
+# To String Stream
 
-Stringify a binary stream into strings
+Tranform a binary stream into strings
 
-[![NPM](https://nodei.co/npm/stringify-stream.png)](https://nodei.co/npm/stringify-stream/)
+[![NPM](https://nodei.co/npm/to-string-stream.png)](https://nodei.co/npm/to-string-stream/)
 
-[![Build Status](https://travis-ci.org/nisaacson/stringify-stream.png)](https://travis-ci.org/nisaacson/stringify-stream)
-[![Dependency Status](https://david-dm.org/nisaacson/stringify-stream/status.png)](https://david-dm.org/nisaacson/stringify-stream)
-[![Code Climate](https://codeclimate.com/github/nisaacson/stringify-stream.png)](https://codeclimate.com/github/nisaacson/stringify-stream)
+[![Build Status](https://travis-ci.org/nisaacson/to-string-stream.png)](https://travis-ci.org/nisaacson/to-string-stream)
+[![Dependency Status](https://david-dm.org/nisaacson/to-string-stream/status.png)](https://david-dm.org/nisaacson/to-string-stream)
+[![Code Climate](https://codeclimate.com/github/nisaacson/to-string-stream.png)](https://codeclimate.com/github/nisaacson/to-string-stream)
 
 # Installation
 ```bash
-npm install -S stringify-stream
+npm install -S to-string-stream
 ```
 
 # Usage
 
-Create an instance of Stringify and pipe a readable stream of objects into that instance
+Create an instance of to-string and pipe a readable stream of objects into that instance
 
 ```javascript
-var StringifyStream = require('stringify-stream')
-// stringify is an instance of require('stream').Transform
-var stringifyStream = new StringifyStream()
+var ToStringStream = require('to-string-stream')
+// to-string is an instance of require('stream').Transform
+var stringStream = new ToStringStream()
 
 var readStream = {} // a stream of buffer objects
-var stringify = readStream.pipe(stringifyStream)
-stringify.on('data', function(chunk) {
+var stringified = readStream.pipe(stringStream)
+stringified.on('data', function(chunk) {
   console.dir(chunk) // json string
 })
-stringify.on('finish', function() {
+stringified.on('finish', function() {
   console.log('finish event called, all objects stringified')
 })
 ```

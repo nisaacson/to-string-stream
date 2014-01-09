@@ -1,5 +1,5 @@
 {
-  "name": "stringify-stream",
+  "name": "to-string-stream",
   "version": "0.0.2",
   "description": "stringify binary data transform stream",
   "main": "index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nisaacson/stringify-stream.git"
+    "url": "git://github.com/nisaacson/to-string-stream.git"
   },
   "keywords": [
     "stream",
@@ -27,7 +27,7 @@
     "parse"
   ],
   "bugs": {
-    "url": "https://github.com/nisaacson/stringify-stream/issues"
+    "url": "https://github.com/nisaacson/to-string-stream/issues"
   },
-  "homepage": "https://github.com/nisaacson/stringify-stream"
+  "homepage": "https://github.com/nisaacson/to-string-stream"
 }

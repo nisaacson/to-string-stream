@@ -2,7 +2,7 @@ var sinon = require('sinon')
 var fs = require('fs')
 var path = require('path')
 var expect = require('chai').expect
-var StringifyStream = require('../')
+var ToStringStream = require('../')
 
 describe('Stringify Test', function () {
   var filePath = path.join(__dirname, 'data/lorem.txt')
@@ -11,7 +11,7 @@ describe('Stringify Test', function () {
   describe('given a binary stream', function () {
 
     it('should parse into string', function (done) {
-      var stringify = new StringifyStream()
+      var stringify = new ToStringStream()
       expect(stringify).to.exist
       var inputStream = fs.createReadStream(filePath)
       var output = inputStream.pipe(stringify)
