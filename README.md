@@ -20,7 +20,10 @@ Create an instance of to-string and pipe a readable stream of objects into that 
 ```javascript
 var ToStringStream = require('to-string-stream')
 // to-string is an instance of require('stream').Transform
-var stringStream = new ToStringStream()
+var opts = {
+  highWaterMark: 2
+}
+var stringStream = new ToStringStream(opts) // opts is optional
 
 var readStream = {} // a stream of buffer objects
 var stringified = readStream.pipe(stringStream)

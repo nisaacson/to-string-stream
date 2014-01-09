@@ -1,10 +1,9 @@
 var Transform = require('stream').Transform
 var util = require('util')
 
-function Stringify() {
-  var opts = {
-    objectMode: true
-  }
+function Stringify(opts) {
+  opts = opts || {}
+  opts.objectMode = true
   Transform.call(this, opts)
 }
 
